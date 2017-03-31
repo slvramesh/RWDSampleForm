@@ -1,0 +1,17 @@
+#formPerson
+    {
+        width:100%;
+    }
+    #formStatus
+    {
+        width:100%;
+    }
+    
+    .stateField, .zipField
+    {
+        width: 25%;
+    }
+    .stateField label, .zipField label
+    {
+        width: 50px;
+    }

@@ -1,0 +1,285 @@
+/** Site layout & Common Styles **/
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, a, img, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+header, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	background-color:#fff;
+	/*font-family: Times, "Times New Roman", Georgia, serif;*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #444;
+	font-size: 0.8em;
+}
+.clear
+{
+    clear: both;
+    margin: 0;
+	padding: 0;
+}
+.floatLeft
+{
+    float: left;
+}
+.floatRight
+{
+    float: right;
+}
+/** End Site layout & Common Styles **/
+
+/** Header styles **/
+#logoWrapper {
+    padding: 1em;
+    background-color:#4b6b9c;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+#menu {
+    background-color: #394e61;
+    padding: 0.5em 1em;
+    height: 1.7em;
+    min-width: 15em;
+}
+#menu ul li
+{
+    display: inline;
+    list-style-type: none;
+    float: left;
+}
+#menu ul li a, #menu ul li a:hover
+{
+    background-color: #465c70;
+    padding: 0.3em 1.5em;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #4f677d;
+    width: 4em;
+    display: block;
+    text-align: center;
+}
+/** End Header styles */
+
+/** Main Content styles **/
+#mainContent
+{
+    padding: 2em;
+    min-width: 15em;
+}
+.fullWith
+{
+    width: 100%;
+}
+.halfWidth
+{
+    width: 50% !important;
+}
+input[type='text'], select, textarea
+{
+    border: 1px solid #ccc;
+    width: 100%;
+}
+#formPerson
+{
+    width:55%;
+}
+.formField
+{
+    width: 100%;
+    padding: 0.5em 0;
+}
+.formFieldRow
+{
+    width: 100%;
+    clear: both;
+}
+.formField label
+{
+    width: 75px;
+    float: left;
+}
+.formField .inputField
+{
+    display: block;
+    overflow: hidden;
+    padding: 0 5px 0 0;
+}
+.cityField
+{
+    width: 50%;
+    height: 20px;
+    min-width: 150px;
+}
+.stateField, .zipField
+{
+    width: 25%;
+    min-width: 110px;
+    height: 20px;
+}
+.stateField label, .zipField label
+{
+    width: 50px;
+}
+#formStatus
+{
+    width: 43%;
+    float: right;
+}
+.statusField .txtStatus
+{
+    width: 98%;
+    height: 3em;
+}
+
+.records
+{
+    padding-top: 20px;
+    width: 100%;
+    min-width: 490px;
+}
+.records .rowHeader span, .records .row span
+{
+    display: block;
+    width: 23.8%;
+    float: left;
+    min-width: 83px;
+    border-top: 1px solid #ccc;
+    border-right: 0px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 5px;
+}
+.records .rowHeader span
+{
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    border-right: 0px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.records .row span
+{
+    text-align: left;
+    border-top: 0px solid #ccc;
+    border-right: 0px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.records span.lastCell
+{
+    border-right: 1px solid #ccc;
+    min-width: 150px !important;
+}
+
+
+/** End Main Conten styles **/
+
+/** Footer Style **/
+#footer
+{
+    padding: 10px;
+    background-color:#4b6b9c;
+    color: #fff;
+    text-align: center;
+}
+
+/** Media query **/
+@media screen and (max-width:1000px) 
+{
+   .records .rowHeader span, .records .row span
+    {
+        width: 23%;
+    }
+}
+@media screen and (min-width:900px) 
+{
+   .stateField, .zipField
+    {
+        width: 25%;
+    }
+    .stateField label, .zipField label
+    {
+        width: 50px;
+    }
+}
+@media screen and (max-width:850px) 
+{
+    .stateField, .zipField
+    {
+        width: 50%;
+    }
+    .stateField label, .zipField label
+    {
+        width: 75px;
+    }
+}
+@media screen and (max-width:800px) 
+{
+   .records .rowHeader span, .records .row span
+    {
+        width: 22%;
+    } 
+}
+@media screen and (max-width:700px) 
+{
+   .records .rowHeader span, .records .row span
+    {
+        width: 20%;
+    } 
+}
+
+@media screen and (max-width:600px) 
+{
+    #formPerson
+    {
+        width:100%;
+    }
+    #formStatus
+    {
+        width:100%;
+    }
+    
+    .stateField, .zipField
+    {
+        width: 25%;
+    }
+   .stateField label, .zipField label
+    {
+        width: 50px;
+    }
+}
+@media screen and (max-width:510px) 
+{
+    .stateField, .zipField
+    {
+        width: 50%;
+    }
+    .stateField label, .zipField label
+    {
+        width: 75px;
+    }
+}
+@media screen and (max-width:400px)
+{
+    .halfWidth
+    {
+        width: 100% !important;
+    }
+    .cityField, .stateField, .zipField
+    {
+        width: 100%;
+    }
+    .stateField label, .zipField label
+    {
+        width: 75px;
+    }
+}

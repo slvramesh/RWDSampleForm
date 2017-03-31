@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Define page character set -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	
+	<title>RWD POC</title>
+	
+	<!-- Include style sheets -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+    <!--[if lt IE 9]>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->
+        
+</head>
+<body>
+
+    <!-- wrapper -->
+    <div id="wrapper">
+    
+        <!-- Container-->
+        <div id="container">
+                <!-- Header -->
+                    <div id="header">
+                        <div id="logoWrapper">
+                            <h1>Sample RWD design</h1>
+                        </div>
+                        
+                        <!-- Top navigation -->
+                        <div id="menu">
+                            <ul>
+                                <li><a href="index.html" title="Home">Home</a></li>
+                                <li><a href="about.html" title="About">About</a></li>
+                            </ul>
+                            <br class="clear" />
+                        </div>
+                        <!-- End top navigation -->
+                        
+                    </div>
+                <!-- End Header -->
+                
+                <!-- Content-->
+                <div id="mainContent">
+                    <div class="formContent fullWith">
+                    <form action="index.html" method="post">
+                        <!-- Form person -->
+                        <div id="formPerson" class="floatLeft">
+                            <div class="formFieldRow">
+                                <div class="formField halfWidth floatLeft">
+                                    <label>First Name:</label>
+                                    <span class="inputField">
+                                        <input type="text" name="firstName" />
+                                    </span>
+                                    <br class="clear" />
+                                </div>
+
+                                <div class="formField halfWidth floatLeft">
+                                    <label>Last Name:</label>
+                                    <span class="inputField">
+                                        <input type="text" name="lastName" />
+                                    </span>
+                                    <br class="clear" />
+                                </div>
+                            </div>
+                            
+                            <br class="clear" />
+                            
+                            <div class="formFieldRow">
+                                <div class="formField addressField">
+                                    <label>Address:</label>
+                                    <span class="inputField">
+                                        <input type="text" name="firstName" />
+                                    </span>
+                                    <br class="clear" />
+                                </div>
+                            </div>
+                            
+                            <div class="formFieldRow">
+                                <div class="formField cityField floatLeft">
+                                    <label>City:</label>
+                                    <span class="inputField">
+                                        <input type="text" name="firstName" />
+                                    </span>
+                                    <br class="clear" />
+                                </div>
+                                <div class="formField stateField floatLeft">
+                                    <label>State:</label>
+                                    <span class="inputField">
+                                        <select><option>-Select-</option></select>
+                                    </span>
+                                    <br class="clear" />
+                                </div>
+                                <div class="formField zipField floatLeft">
+                                    <label>Zip:</label>
+                                    <span class="inputField">
+                                        <input type="text" name="firstName" />
+                                    </span>
+                                    <br class="clear" />
+                                </div>
+                                <br class="clear" />
+                            </div>
+                            
+                            <br class="clear" />
+                            <div class="formField submitField">
+                                <span class="inputField">
+                                    <input type="button" class="floatRight" name="btnSubmit" value="Add Person" />
+                                </span>
+                            </div>
+                            <br class="clear" />
+                            
+                        </div>
+                        <!-- End form person -->
+                        
+                        <!-- Form status update -->
+                        <div id="formStatus">
+                            <div class="formField nameField">
+                                <label>Name:</label>
+                                <span class="inputField">
+                                    <select><option>-Select-</option></select>
+                                </span>
+                                <br class="clear" />
+                            </div>
+                            <div class="formField statusField">
+                                <label>Status:</label>
+                                <span class="inputField">
+                                    <textarea class="txtStatus"></textarea>
+                                </span>
+                                <br class="clear" />
+                            </div>
+                            
+                            <br class="clear" />
+                            <div class="formField">
+                                <span class="inputField">
+                                    <input type="button" class="floatRight" name="btnSubmit" value="Add Status Update" />
+                                </span>
+                            </div>
+                            <br class="clear" />
+                            
+                        </div>
+                        <!-- end form status update -->
+                        <br class="clear" />
+                    </form>
+                    </div> <!-- .formContent -->
+                    
+                    <br class="clear" />
+                    <!-- Table records -->
+                    <div class="records">
+                        <div class="rowHeader">
+                            <span>Name</span>
+                            <span>FullAddress</span>
+                            <span>LatestUpdate</span>
+                            <span class="lastCell">Date</span>
+                            <br class="clear" />
+                        </div>
+                        <div class="row">
+                            <span>Mohan Kumar</span>
+                            <span>TCO, Chnnai</span>
+                            <span>07/24/2013</span>
+                            <span class="lastCell">10/24/2013 12:00:00 AM</span>
+                            <br class="clear" />
+                        </div>
+                        <div class="row">
+                            <span>Aravinth Babu</span>
+                            <span>TCO, Chnnai</span>
+                            <span>07/24/2013</span>
+                            <span class="lastCell">07/24/2013 12:00:00 AM</span>
+                            <br class="clear" />
+                        </div>
+                        <div class="row">
+                            <span>K Vijay</span>
+                            <span>DLF, Chnnai</span>
+                            <span>09/20/2013</span>
+                            <span class="lastCell">07/24/2013 12:00:00 AM</span>
+                            <br class="clear" />
+                        </div>
+                        <div class="row">
+                            <span>Selva</span>
+                            <span>TCO, Chnnai</span>
+                            <span>07/24/2013</span>
+                            <span class="lastCell">07/24/2013 12:00:00 AM</span>
+                            <br class="clear" />
+                        </div>
+                    </div>
+                    <!-- End Table records -->
+                    
+                    <br class="clear" />
+                    
+                </div>
+                <!-- End content -->
+                
+                <!-- Footer -->
+                <div id="footer">
+                    <p>Copyright 2013 .com</p>
+                </div>
+                <!-- End Footer -->
+                
+        </div>
+        <!-- End container -->
+        
+    </div>
+    <!-- End wrapper -->
+    
+</body>
+</html>
